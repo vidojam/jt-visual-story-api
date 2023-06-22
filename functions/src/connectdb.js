@@ -1,6 +1,6 @@
 import { MongoClient } from"mongodb"
-import { mongoUri } from "../visual-story.js";
+import { mongoUri } from "../secrets.js";
 
 const client = new MongoClient(mongoUri);
 
-export const db = client.db("photos");
+export const db = client.db("visual-story");

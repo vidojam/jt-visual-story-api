@@ -1,12 +1,12 @@
 import { db } from "./connectdb.js";
-//import { ObjectId } from "mongodb"; // ObjectId is a class/must a new ObjectId as in the bottom
+import { ObjectId } from "mongodb"; // ObjectId is a class/must a new ObjectId as in the bottom
 
-const coll = db.collection("photos");
+const coll = db.collection("story");
 
 // CRUD GET
 export async function getAllPhotos(req, res) {
-  const evals = await coll.find({}).toArray();
-  res.send(photos).status(200);
+  const story = await coll.find({}).toArray();
+  res.send(story).status(200);
 }
 
 // CRUD: POST

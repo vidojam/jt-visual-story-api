@@ -6,7 +6,7 @@ const coll = db.collection("story");
 // CRUD GET
 export async function getAllPhotos(req, res) {
   const story = await coll.find({}).toArray();
-  res.send(story).status(200);
+  res.status(200).send(story);
 }
 
 // CRUD: POST

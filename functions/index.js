@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
 app.get("/story", getAllPhotos);
 app.post("/story", addPhoto);
 
-app.listen(PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}...`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Listening on http://localhost:${PORT}...`);
+// });
 
 export const api = functions.https.onRequest(app);
